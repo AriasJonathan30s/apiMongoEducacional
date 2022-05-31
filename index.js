@@ -11,7 +11,7 @@ mongoose.connect('mongodb://localhost:27017/curso_mongo')//,{connectTimeoutMS: 1
         console.log('La conexion a mongoDB ha tenido exito')
 
         app.listen(port, ()=>{
-            console.log('El servidor esta corriendo en: localhost: 5003');
+            console.log('El servidor esta corriendo en: localhost:'+port);
         });
     })
     .catch(err => console.log(err));

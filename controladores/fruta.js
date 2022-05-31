@@ -77,7 +77,7 @@ function getFruta(req,res){
                 });
             }else{
                 res.status(404).send({
-                    mensaje:'No hay la fruta'
+                    mensaje:'Fruta no encontrada'
                 });
             }
         }
@@ -100,7 +100,7 @@ function updateFruta(req,res){
                 });
             }else{
                 res.status(404).send({
-                    mensaje: 'Fruta no existente'
+                    mensaje: 'Fruta no encontrada'
                 });
             }
         }
@@ -122,7 +122,7 @@ function deleteFruta(req,res){
                 });
             }else{
                 res.status(404).send({
-                    mensaje: 'Fruta no existente'
+                    mensaje: 'Fruta no encontrada'
                 });
             }
         }

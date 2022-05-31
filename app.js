@@ -15,5 +15,8 @@ app.use(bodyParser.json());
 // Configurar CORS
 
 // rutas base
+app.use('',express.Router().get('', function pruebas(req,res){res.status(200)
+    .send('Esta ruta es pruebas en esta nueva api');
+}))
 app.use('/api',fruta_routes);
 module.exports = app;
